@@ -17,18 +17,18 @@ import com.openhtmltopdf.pdfboxout.PdfRendererBuilder;
 public class Controller {
 
 	@GetMapping
-public void guarantor() throws IOException {
-    	
+	public void guarantor() throws IOException {
+
 		String process = new String(
 				Files.readAllBytes(Paths.get("src/main/resources/templates/demo.html")));
-		
+
 		PdfRendererBuilder pdfRendererBuilder = new PdfRendererBuilder();
 		pdfRendererBuilder.withHtmlContent(process, "classpath:/static/");
 		OutputStream outputStream1 = new FileOutputStream("guarantor.pdf");
 
 		pdfRendererBuilder.toStream(outputStream1);
 		pdfRendererBuilder.run();
-    	
-    }
+
+	}
 
 }
