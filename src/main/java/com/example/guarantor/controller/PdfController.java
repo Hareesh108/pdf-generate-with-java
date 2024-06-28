@@ -69,6 +69,10 @@ public class PdfController {
 		keyValues.put("otherPaymentDetails", "Payment Details");
 		keyValues.put("dateTime", "2024-06-28T12:34:56");
 
+		keyValues.put("statementDate", "15 December 2023");
+		keyValues.put("paymentDueDate", "04 January 2024");
+		keyValues.put("financingLimit", "1,00,00,000");
+
 		Map<String, Object> model = new HashMap<>();
 		model.put("keyValues", keyValues);
 

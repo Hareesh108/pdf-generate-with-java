@@ -74,11 +74,37 @@
       /* Section 01 */
       .section1 {
         clear: both; /* Ensure this comes below the floated elements */
+        font-size: 10px;
       }
       .card-i {
         border: 1px solid black;
         padding: 5px;
         font-weight: bold;
+      }
+      .card-i-table {
+        text-align: center;
+        margin-top: 5px;
+      }
+      .card-i-table-child-head {
+        display: inline-block;
+        width: 32%;
+        font-weight: bold;
+        margin-right: -4px; /* Adjust for inline-block spacing issue */
+      }
+      .card-i-table-child-head:last-child {
+        margin-right: 0;
+      }
+      .card-i-table-child-body {
+        display: inline-block;
+        width: 32%;
+        border-bottom: 1px solid;
+        margin-right: 3px;
+      }
+      .card-i-table-child-body:last-child {
+        margin-right: 0;
+      }
+
+      .balance-table {
       }
     </style>
   </head>
@@ -128,6 +154,34 @@
     <!-- Section 01 -->
     <section class="section1">
       <div class="card-i">KAD-i BANK ISLAMI BANK ISLAM CARD-i</div>
+
+      <div class="card-i-table">
+        <div class="card-i-table-child-head">
+          Tarikh Penyata/ Sfafemenf Date
+        </div>
+        <div class="card-i-table-child-head">
+          Tarikh Matang/ Payment Due Date
+        </div>
+        <div class="card-i-table-child-head">
+          Had Pembiayaan (RM)/ Financing Limit (RM)
+        </div>
+      </div>
+      <div class="card-i-table">
+        <div
+          class="card-i-table-child-body"
+          th:text="${keyValues.statementDate}"
+        ></div>
+        <div
+          class="card-i-table-child-body"
+          th:text="${keyValues.paymentDueDate}"
+        ></div>
+        <div
+          class="card-i-table-child-body"
+          th:text="${keyValues.financingLimit}"
+        ></div>
+      </div>
+
+      <div></div>
     </section>
   </body>
 </html>

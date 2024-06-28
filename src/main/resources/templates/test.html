@@ -4,45 +4,39 @@
     <meta charset="UTF-8" />
     <title>PDF Template</title>
     <style>
-      /* Add your CSS styles here */
       body {
         font-family: Arial, sans-serif;
         font-size: 12px;
       }
-      .header {
-        border: 1px solid #000; /* Add border around the entire header */
-        padding: 10px; /* Optional: Add padding inside the header */
-        overflow: hidden; /* Clear floats */
+
+      .parent {
+        border: 1px solid;
+        text-align: center; /* Center the child elements */
       }
 
-      .logo-left {
-        float: left;
-      }
-      .logo-right {
-        float: right;
+      .child {
+        display: inline-block;
+        width: 32%; /* Ensure the width sums up to 100% including margins */
+        margin-right: -4px; /* Adjust for inline-block spacing issue */
+        border-bottom: 2px solid;
       }
 
-      .logo-left img {
-        max-width: 200px; /* Ensure the logo images fit within their containers */
-        height: auto;
-      }
-      .logo-right img {
-        max-width: 50px; /* Ensure the logo images fit within their containers */
-        height: auto;
+      /* Remove the right margin for the last child to avoid overflow */
+      .child:last-child {
+        margin-right: 0;
       }
     </style>
   </head>
   <body>
-    <header class="header">
-      <!-- Left side logo -->
-      <div class="logo-left">
-        <img src="bankIslam-logo.png" alt="Left Logo" width="200" />
-      </div>
-
-      <!-- Right side logo -->
-      <div class="logo-right">
-        <img src="logo-perbankan-islam.png" alt="Right Logo" width="50" />
-      </div>
-    </header>
+    <div class="parent">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+      <div class="child">Child 3</div>
+    </div>
+    <div class="parent">
+      <div class="child">Child 4</div>
+      <div class="child">Child 5</div>
+      <div class="child">Child 6</div>
+    </div>
   </body>
 </html>
