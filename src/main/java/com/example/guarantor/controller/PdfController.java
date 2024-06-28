@@ -73,6 +73,12 @@ public class PdfController {
 		keyValues.put("paymentDueDate", "04 January 2024");
 		keyValues.put("financingLimit", "1,00,00,000");
 
+		keyValues.put("previousBalance", "1,00,00,000");
+		keyValues.put("payment", "66,00,000");
+		keyValues.put("overdue", "50,000");
+		keyValues.put("currentBalance", "14,00,000");
+		keyValues.put("minimumPayment", "18,000");
+
 		Map<String, Object> model = new HashMap<>();
 		model.put("keyValues", keyValues);
 
