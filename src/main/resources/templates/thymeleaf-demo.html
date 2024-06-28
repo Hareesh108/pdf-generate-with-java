@@ -10,38 +10,45 @@
         font-size: 12px;
       }
       .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-        border: 1px solid;
+        overflow: hidden; /* Clear floats */
+      }
+
+      .logo-left {
+        float: left;
+      }
+      .logo-right {
+        float: right;
       }
 
       .logo-left img {
-        max-width: 200px; /* Ensure the logo images fit within their containers */
+        max-width: 230px;
         height: auto;
       }
       .logo-right img {
-        max-width: 50px; /* Ensure the logo images fit within their containers */
+        max-width: 50px;
         height: auto;
       }
       .address {
-        margin-top: 15px;
         font-size: 10px;
+        margin-top: 15px;
+        float: left;
       }
       .name {
         font-size: 15px;
         font-weight: bold;
-        text-align: right; /* Align text to the right */
+        text-align: right;
+        float: right;
+        margin-top: 15px;
       }
       .subname {
         font-style: italic;
         margin-top: 5px;
         text-align: right;
         font-weight: 400;
+        padding-right: 5px;
       }
       .message-box {
-        border: 1px solid #ccc;
+        border: 1px solid #0a0808;
         padding: 10px;
         height: 100px;
         margin-top: 10px;
@@ -51,30 +58,35 @@
       }
       .message-text {
         font-size: 12px;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
-    <header class="header">
-      <!-- Left side -->
-      <div class="logo-left" style="border: 1px solid">
-        <img src="bankIslam-logo.png" alt="Left Logo" width="200px" />
-      </div>
-      <div class="address">
-        Pusat Kad Bank Islam / Bank Islam Card Centre<br />
-        Bank Islam Malaysia Berhad (98127-X)<br />
-        Aras 24 Menara Bank Islam, No. 22 Jalan Perak, 50450 Kuala Lumpur<br />
-        Tel: 03-26 900 900 Faks: 03-2726 7606 <br />
-        Laman Web: www.bankislam.com
-      </div>
+    <header>
+      <div class="header">
+        <!-- Left side -->
+        <div class="logo-left">
+          <img src="bank-islam-logo.png" alt="Left Logo" width="200px" />
+        </div>
 
-      <!-- Right side -->
-      <div class="logo-right" style="border: 1px solid">
-        <img src="logo-perbankan-islam.png" alt="Right Logo" width="50px" />
+        <!-- Right side -->
+        <div class="logo-right">
+          <img src="logo-perbankan-islam.png" alt="Right Logo" width="50px" />
+        </div>
       </div>
-      <div class="name">
-        PENYATA AKAUN
-        <div class="subname">ACCOUNT STATEMENT</div>
+      <div class="header">
+        <div class="address">
+          Pusat Kad Bank Islam / Bank Islam Card Centre<br />
+          Bank Islam Malaysia Berhad (98127-X)<br />
+          Aras 24 Menara Bank Islam, No. 22 Jalan Perak, 50450 Kuala Lumpur<br />
+          Tel: 03-26 900 900 Faks: 03-2726 7606 <br />
+          Laman Web: www.bankislam.com
+        </div>
+        <div class="name">
+          PENYATA AKAUN
+          <div class="subname">ACCOUNT STATEMENT</div>
+        </div>
       </div>
     </header>
 

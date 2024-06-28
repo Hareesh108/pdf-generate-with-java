@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PDF Template</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+      }
+      .header {
+        border: 1px solid #000; /* Add border around the entire header */
+        padding: 10px; /* Optional: Add padding inside the header */
+        overflow: hidden; /* Clear floats */
+      }
+
+      .logo-left {
+        float: left;
+      }
+      .logo-right {
+        float: right;
+      }
+
+      .logo-left img {
+        max-width: 200px; /* Ensure the logo images fit within their containers */
+        height: auto;
+      }
+      .logo-right img {
+        max-width: 50px; /* Ensure the logo images fit within their containers */
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Left side logo -->
+      <div class="logo-left">
+        <img src="bankIslam-logo.png" alt="Left Logo" width="200" />
+      </div>
+
+      <!-- Right side logo -->
+      <div class="logo-right">
+        <img src="logo-perbankan-islam.png" alt="Right Logo" width="50" />
+      </div>
+    </header>
+  </body>
+</html>
