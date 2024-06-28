@@ -2,9 +2,275 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
-    <title>Thymeleaf demo template</title>
+    <title>Thymeleaf Demo Template</title>
   </head>
   <body>
-    <h1 th:text="${message}"></h1>
+    <h1>Thymeleaf Demo Template</h1>
+    <p>
+      Statement No:
+      <span
+        th:text="${keyValues.statementNo != null ? keyValues.statementNo : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Sequence No:
+      <span
+        th:text="${keyValues.sequenceNo != null ? keyValues.sequenceNo : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Line Seq No:
+      <span
+        th:text="${keyValues.lineSeqNo != null ? keyValues.lineSeqNo : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Text/Letter Key:
+      <span
+        th:text="${keyValues.textLetterKey != null ? keyValues.textLetterKey : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Stmt Record Type:
+      <span
+        th:text="${keyValues.stmtRecordType != null ? keyValues.stmtRecordType : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Entry Date:
+      <span
+        th:text="${keyValues.entryDate != null ? keyValues.entryDate : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Transaction Date:
+      <span
+        th:text="${keyValues.transactionDate != null ? keyValues.transactionDate : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Form Type:
+      <span
+        th:text="${keyValues.formType != null ? keyValues.formType : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Text:
+      <span th:text="${keyValues.text != null ? keyValues.text : 'N/A'}"></span>
+    </p>
+    <p>
+      Trans Amount:
+      <span
+        th:text="${keyValues.transAmount != null ? keyValues.transAmount : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Default Sign:
+      <span
+        th:text="${keyValues.defaultSign != null ? keyValues.defaultSign : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Currency Code:
+      <span
+        th:text="${keyValues.currencyCode != null ? keyValues.currencyCode : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Card Number:
+      <span
+        th:text="${keyValues.cardNumber != null ? keyValues.cardNumber : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Customer Number:
+      <span
+        th:text="${keyValues.customerNumber != null ? keyValues.customerNumber : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Processing Date:
+      <span
+        th:text="${keyValues.processingDate != null ? keyValues.processingDate : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Latest Due Date:
+      <span
+        th:text="${keyValues.latestDueDate != null ? keyValues.latestDueDate : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Amount Due:
+      <span
+        th:text="${keyValues.amountDue != null ? keyValues.amountDue : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Transaction Code Group:
+      <span
+        th:text="${keyValues.transactionCodeGroup != null ? keyValues.transactionCodeGroup : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Balance Brought Forward:
+      <span
+        th:text="${keyValues.balanceBroughtForward != null ? keyValues.balanceBroughtForward : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Debit Amount:
+      <span
+        th:text="${keyValues.debitAmount != null ? keyValues.debitAmount : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Credit Amount:
+      <span
+        th:text="${keyValues.creditAmount != null ? keyValues.creditAmount : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Total Pft./Charge Amount:
+      <span
+        th:text="${keyValues.totalPftChargeAmount != null ? keyValues.totalPftChargeAmount : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Balance Carried Forward:
+      <span
+        th:text="${keyValues.balanceCarriedForward != null ? keyValues.balanceCarriedForward : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Capitalised Profit:
+      <span
+        th:text="${keyValues.capitalisedProfit != null ? keyValues.capitalisedProfit : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Acquirer Reference Number:
+      <span
+        th:text="${keyValues.acquirerReferenceNumber != null ? keyValues.acquirerReferenceNumber : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Fiche Reference:
+      <span
+        th:text="${keyValues.ficheReference != null ? keyValues.ficheReference : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Merchant Id:
+      <span
+        th:text="${keyValues.merchantId != null ? keyValues.merchantId : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Terminal ID:
+      <span
+        th:text="${keyValues.terminalId != null ? keyValues.terminalId : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Terminal Batch No:
+      <span
+        th:text="${keyValues.terminalBatchNo != null ? keyValues.terminalBatchNo : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Line Space Before:
+      <span
+        th:text="${keyValues.lineSpaceBefore != null ? keyValues.lineSpaceBefore : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Line Space After:
+      <span
+        th:text="${keyValues.lineSpaceAfter != null ? keyValues.lineSpaceAfter : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Embossing Name:
+      <span
+        th:text="${keyValues.embossingName != null ? keyValues.embossingName : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Post Code:
+      <span
+        th:text="${keyValues.postCode != null ? keyValues.postCode : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      City:
+      <span th:text="${keyValues.city != null ? keyValues.city : 'N/A'}"></span>
+    </p>
+    <p>
+      Country Code:
+      <span
+        th:text="${keyValues.countryCode != null ? keyValues.countryCode : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Pick-up Code Y/N:
+      <span
+        th:text="${keyValues.pickUpCodeYN != null ? keyValues.pickUpCodeYN : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Multi-currency Y/N:
+      <span
+        th:text="${keyValues.multiCurrencyYN != null ? keyValues.multiCurrencyYN : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Product Id:
+      <span
+        th:text="${keyValues.productId != null ? keyValues.productId : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Description:
+      <span
+        th:text="${keyValues.description != null ? keyValues.description : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Product Type:
+      <span
+        th:text="${keyValues.productType != null ? keyValues.productType : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Email Address:
+      <span
+        th:text="${keyValues.emailAddress != null ? keyValues.emailAddress : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Sender Name:
+      <span
+        th:text="${keyValues.senderName != null ? keyValues.senderName : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Recipient Reference:
+      <span
+        th:text="${keyValues.recipientReference != null ? keyValues.recipientReference : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Other Payment Details:
+      <span
+        th:text="${keyValues.otherPaymentDetails != null ? keyValues.otherPaymentDetails : 'N/A'}"
+      ></span>
+    </p>
+    <p>
+      Date and Time:
+      <span
+        th:text="${keyValues.dateTime != null ? keyValues.dateTime : 'N/A'}"
+      ></span>
+    </p>
   </body>
 </html>
