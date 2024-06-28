@@ -13,4 +13,9 @@ public class HelloController {
         return "thymeleaf-demo";
     }
 
+    @GetMapping("/test")
+    public String test() {
+        return "external-js-css";
+    }
+
 }
