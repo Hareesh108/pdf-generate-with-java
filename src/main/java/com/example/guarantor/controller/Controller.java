@@ -20,7 +20,7 @@ public class Controller {
 	public void guarantor() throws IOException {
 
 		String process = new String(
-				Files.readAllBytes(Paths.get("src/main/resources/templates/SavingAccountTemplate.html")));
+				Files.readAllBytes(Paths.get("src/main/resources/templates/demo1.html")));
 
 		PdfRendererBuilder pdfRendererBuilder = new PdfRendererBuilder();
 		pdfRendererBuilder.withHtmlContent(process, "classpath:/static/");
