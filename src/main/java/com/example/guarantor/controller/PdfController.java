@@ -76,7 +76,7 @@ public class PdfController {
 
 		PdfRendererBuilder pdfRendererBuilder = new PdfRendererBuilder();
 		pdfRendererBuilder.withHtmlContent(renderedHtml, "classpath:/static/");
-		try (OutputStream outputStream = new FileOutputStream("guarantor.pdf")) {
+		try (OutputStream outputStream = new FileOutputStream("test.pdf")) {
 			pdfRendererBuilder.toStream(outputStream);
 			pdfRendererBuilder.run();
 		}
