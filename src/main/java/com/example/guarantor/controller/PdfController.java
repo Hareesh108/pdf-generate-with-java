@@ -84,11 +84,16 @@ public class PdfController {
 
 		String renderedHtml = thymeleafService.renderTemplate("demo.html", model);
 
+		System.out.println(renderedHtml);
+
 		PdfRendererBuilder pdfRendererBuilder = new PdfRendererBuilder();
 		pdfRendererBuilder.withHtmlContent(renderedHtml, "classpath:/static/");
 		try (OutputStream outputStream = new FileOutputStream("test.pdf")) {
 			pdfRendererBuilder.toStream(outputStream);
+			System.out.println(pdfRendererBuilder.toStream(outputStream) + "nnnn");
 			pdfRendererBuilder.run();
+		} catch (Exception e) {
+			System.out.println(e);
 		}
 	}
 }
