@@ -128,15 +128,12 @@
         margin-top: 10px;
         width: 100%;
         border-collapse: collapse;
+        table-layout: fixed;
+        vertical-align: top;
+        word-wrap: break-word;
       }
       .add-table-header {
         text-align: center;
-        font-weight: bold;
-        border: 1px solid;
-        box-sizing: border-box;
-        padding: 5px;
-      }
-      .add-table-head {
         font-weight: bold;
         border: 1px solid;
         box-sizing: border-box;
@@ -146,7 +143,12 @@
         border: 1px solid;
         box-sizing: border-box;
         font-size: 10px;
-        padding: 3px;
+        padding: 2px;
+        vertical-align: top;
+        word-wrap: break-word;
+      }
+      .text-center {
+        text-align: center;
       }
 
       .add-note {
@@ -157,6 +159,18 @@
         width: 100%;
         border-collapse: collapse;
         margin-top: 3px;
+        table-layout: fixed;
+        vertical-align: top;
+        word-wrap: break-word;
+      }
+      .add-bottom-table-last-column {
+        border: 1px solid;
+        box-sizing: border-box;
+        font-size: 10px;
+        padding: 3px;
+        text-align: right;
+        vertical-align: top;
+        word-wrap: break-word;
       }
     </style>
   </head>
@@ -303,17 +317,22 @@
           <td class="add-table-body">
             Hanya bayaran minima bulanan/ Pay only the minimum payment ofRMXXX
           </td>
-          <td class="add-table-body">9 tahun/year 7 bulan/months</td>
-          <td class="add-table-body">RM 10,625.91</td>
+          <td class="add-table-body text-center">
+            9 tahun/year 7 bulan/months
+          </td>
+          <td class="add-table-body text-center">RM 10,625.91</td>
         </tr>
         <tr>
           <td class="add-table-body">
             Bayaran minima bulanan+ Amaun tetap RM50 bulanan/ Minimum payment
             due+ fixed amount of RMY50 monthly
           </td>
-          <td class="add-table-body">1 tahun/year 11 bulan/months</td>
-          <td class="add-table-body">
-            RM 4,880.24 (Penjimatan/ Saving = RM 5,745.67)
+          <td class="add-table-body text-center">
+            1 tahun/year 11 bulan/months
+          </td>
+          <td class="add-table-body text-center">
+            RM 4,880.24 <br />
+            (Penjimatan/ Saving = RM 5,745.67)
           </td>
         </tr>
       </table>
@@ -338,19 +357,19 @@
           <td colspan="2" class="add-table-body">
             Jumlah Pembiayaan yang DigunakanI Total Financing Utilized
           </td>
-          <td class="add-table-body">RM 31,221.61</td>
+          <td class="add-bottom-table-last-column">RM 31,221.61</td>
         </tr>
         <tr>
           <td colspan="2" class="add-table-body">
             Jumlah Caj Kewangan yang DikenakanI Total Profit Chaipes
           </td>
-          <td class="add-table-body">RM 3,434.97</td>
+          <td class="add-bottom-table-last-column">RM 3,434.97</td>
         </tr>
         <tr>
           <td colspan="2" class="add-table-body">
             Jumlah Fi dan Caj yang Dikenakan/ Total Fee and Charges Imposed
           </td>
-          <td class="add-table-body">RM 75.00</td>
+          <td class="add-bottom-table-last-column">RM 75.00</td>
         </tr>
       </table>
     </section>
