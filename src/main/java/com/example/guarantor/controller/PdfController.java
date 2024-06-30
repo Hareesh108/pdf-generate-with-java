@@ -82,7 +82,7 @@ public class PdfController {
 		Map<String, Object> model = new HashMap<>();
 		model.put("keyValues", keyValues);
 
-		String renderedHtml = thymeleafService.renderTemplate("demo.html", model);
+		String renderedHtml = thymeleafService.renderTemplate("test.xhtml", model);
 
 		System.out.println(renderedHtml);
 
