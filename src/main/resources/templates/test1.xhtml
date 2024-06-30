@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .container {
+        font-size: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .column {
+        display: inline-block;
+        width: 31%;
+        margin: 0 1%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">Hello</div>
+      <div class="column">Hey</div>
+      <div class="column">Hiiii</div>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .container {
+        width: 100%;
+        display: table;
+        border-spacing: 16px;
+      }
+
+      .column {
+        display: table-cell;
+        width: calc(33.33% - 10px); /* Adjust width and account for spacing */
+        padding: 8px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">Hello</div>
+      <div class="column">Hey</div>
+      <div class="column">Hiiii</div>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .container {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .column {
+        width: 33.33%; /* Equal width for three columns */
+        padding: 8px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="container">
+      <tr>
+        <td class="column">Hello</td>
+        <td class="column">Hey</td>
+        <td class="column">Hiiii</td>
+      </tr>
+    </table>
+  </body>
+</html>

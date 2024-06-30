@@ -1,24 +1,88 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
-    <title>PDF Template</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 12px;
+      .payment-container {
+        width: 100%;
+        font-size: 10px; /* Reset font size for content */
+        text-align: start; /* Center inline-block elements */
+      }
+
+      .payment-column {
+        display: inline-block;
+        width: 49%; /* Adjust width for equal columns, consider spacing */
+        border: 1px solid #ccc;
+        box-sizing: border-box; /* Include padding and border in width */
+      }
+
+      .payment-box {
+      }
+      .pay-box-column-key {
+        display: inline-block;
+        width: 60%; /* Adjust width for equal columns, consider spacing */
+        box-sizing: border-box; /* Include padding and border in width */
+        vertical-align: top; /* Align top to handle multi-line content */
+      }
+      .pay-box-column-value {
+        display: inline-block;
+        width: 38%; /* Adjust width for equal columns, consider spacing */
+        padding: 8px;
+        border: 1px solid #ccc;
+        box-sizing: border-box; /* Include padding and border in width */
+        vertical-align: top; /* Align top to handle multi-line content */
       }
     </style>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="box1">One</div>
-      <div class="box2">Two</div>
-      <div class="box3">Three &InvisibleTimes;</div>
-      &InvisibleTimes; &DoubleRightArrow; &nbsp;
-      <div class="box4">Four &DoubleRightArrow;</div>
-      <div class="box5">
-        Five &nbsp;jdnjdkdjk &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;ckc/dkd
+    <div class="payment-container">
+      <div class="payment-column payment-box">
+        <table>
+          <tr>
+            <td>No. Rujukan Pembayaran / Payment Ref No.</td>
+            <td>Hello</td>
+          </tr>
+          <tr>
+            <td>Tarikh Penyata / Statement Date</td>
+            <td>Hello</td>
+          </tr>
+          <tr>
+            <td>Tarikh Matang / Payment Due Date</td>
+            <td>Hello</td>
+          </tr>
+          <tr>
+            <td>Baki Semasa / Current Balance (RM)</td>
+            <td>Hello</td>
+          </tr>
+          <tr>
+            <td>Bayaran Minimum / Minimum Payment (RM)</td>
+            <td>Hello</td>
+          </tr>
+        </table>
+      </div>
+      <div class="payment-column payment-box">
+        <table>
+          <tr>
+            <td>Bank / Bank</td>
+            <td>Hello</td>
+          </tr>
+          <tr>
+            <td>Tempat / Place</td>
+            <td>Hello</td>
+          </tr>
+          <tr>
+            <td>No. Cek / Cheque No.</td>
+            <td>Hello</td>
+          </tr>
+          <tr>
+            <td>Amaun Cek / Cheque Amount (RM)</td>
+            <td>Hello</td>
+          </tr>
+          <tr>
+            <td>Amaun Bayaran / Payment Amount (RM)</td>
+            <td>Hello</td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>

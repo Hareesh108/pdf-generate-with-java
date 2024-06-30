@@ -198,6 +198,63 @@
         border: 1px solid;
         margin-top: 5px;
       }
+
+      /* Section 04 : Payment Advice */
+      .payment-advice {
+        position: relative;
+      }
+      .payment-advice-head {
+        padding: 4px 8px;
+        font-weight: bold;
+        border: 1px solid;
+      }
+      .payment-advice-head-span {
+        font-style: italic;
+      }
+      .payment-advice-head-1 {
+        margin-top: 20px;
+      }
+      .payment-advice-head-1-span {
+        padding: 4px 8px;
+        font-weight: bold;
+        border: 1px solid;
+      }
+      .logo-right-advice {
+        float: right;
+      }
+      .logo-right-advice img {
+        max-width: 50px;
+        height: auto;
+      }
+      .payment-bank-logo {
+        position: absolute;
+        right: 70px;
+        top: 2px;
+      }
+
+      .payment-container {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 10px; /* Reset font size for content */
+        text-align: start; /* Center inline-block elements */
+      }
+
+      .payment-column {
+        display: inline-block;
+        width: 49.7%; /* Adjust width for equal columns, consider spacing */
+        box-sizing: border-box; /* Include padding and border in width */
+      }
+
+      .payment-box {
+      }
+      .pay-box-column-key {
+        width: 62%; /* Adjust width for equal columns, consider spacing */
+      }
+      .pay-box-column-value {
+        border: 1px solid #000000;
+        width: 36%;
+        text-align: right;
+      }
     </style>
   </head>
   <body>
@@ -423,6 +480,103 @@
         <div class="notice-bottom">
           SILA LAYARI WWW.BANKISLAM.COM UNTUK MENDAPATKAN INFO TERKINI BERKENAAN
           TERMA DAN SYARAT KAD KREDIT-I BANK ISLAM.
+        </div>
+      </div>
+    </section>
+
+    <div style="page-break-before: always"></div>
+
+    <!-- Section 04 : Payment Advice -->
+    <section>
+      <div class="payment-advice">
+        <img
+          src="bank-islam-logo.png"
+          class="payment-bank-logo"
+          alt="Bank Islam"
+          width="200px"
+        />
+
+        <div class="logo-right-advice">
+          <img
+            src="logo-perbankan-islam.png"
+            alt="Perbankan Islam"
+            width="50px"
+          />
+        </div>
+        <span class="payment-advice-head">
+          ARAHAN PEMBAYARANI /
+          <span class="payment-advice-head-span">PAYMENT ADVICE</span>
+        </span>
+
+        <div class="payment-advice-head-1">
+          <span class="payment-advice-head-1-span">
+            XXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXXXXXXX
+          </span>
+        </div>
+      </div>
+
+      <div class="payment-container">
+        <div class="payment-column payment-box">
+          <table style="width: 100%; border-collapse: collapse">
+            <th></th>
+            <tr>
+              <td class="pay-box-column-key">
+                No. Rujukan Pembayaran / Payment Ref No.
+              </td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+            <tr>
+              <td class="pay-box-column-key">
+                Tarikh Penyata / Statement Date
+              </td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+            <tr>
+              <td class="pay-box-column-key">
+                Tarikh Matang / Payment Due Date
+              </td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+            <tr>
+              <td class="pay-box-column-key">
+                Baki Semasa / Current Balance (RM)
+              </td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+            <tr>
+              <td class="pay-box-column-key">
+                Bayaran Minimum / Minimum Payment (RM)
+              </td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+          </table>
+        </div>
+        <div class="payment-column payment-box">
+          <table style="width: 100%; border-collapse: collapse">
+            <th></th>
+            <tr>
+              <td class="pay-box-column-key">Bank / Bank</td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+            <tr>
+              <td class="pay-box-column-key">Tempat / Place</td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+            <tr>
+              <td class="pay-box-column-key">No. Cek / Cheque No.</td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+            <tr>
+              <td class="pay-box-column-key">Amaun Cek / Cheque Amount (RM)</td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+            <tr>
+              <td class="pay-box-column-key">
+                Amaun Bayaran / Payment Amount (RM)
+              </td>
+              <td class="pay-box-column-value">Hello</td>
+            </tr>
+          </table>
         </div>
       </div>
     </section>
