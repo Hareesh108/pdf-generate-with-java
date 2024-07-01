@@ -254,6 +254,7 @@
         border: 1px solid #000000;
         width: 36%;
         text-align: right;
+        padding: 1px 10px;
       }
     </style>
   </head>
@@ -523,31 +524,46 @@
               <td class="pay-box-column-key">
                 No. Rujukan Pembayaran / Payment Ref No.
               </td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment1}"
+              ></td>
             </tr>
             <tr>
               <td class="pay-box-column-key">
                 Tarikh Penyata / Statement Date
               </td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment2}"
+              ></td>
             </tr>
             <tr>
               <td class="pay-box-column-key">
                 Tarikh Matang / Payment Due Date
               </td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment3}"
+              ></td>
             </tr>
             <tr>
               <td class="pay-box-column-key">
                 Baki Semasa / Current Balance (RM)
               </td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment4}"
+              ></td>
             </tr>
             <tr>
               <td class="pay-box-column-key">
                 Bayaran Minimum / Minimum Payment (RM)
               </td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment5}"
+              ></td>
             </tr>
           </table>
         </div>
@@ -556,25 +572,37 @@
             <th></th>
             <tr>
               <td class="pay-box-column-key">Bank / Bank</td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment1}"
+              ></td>
             </tr>
             <tr>
               <td class="pay-box-column-key">Tempat / Place</td>
-              <td class="pay-box-column-value">Hello</td>
+              <td class="pay-box-column-value">Pune</td>
             </tr>
             <tr>
               <td class="pay-box-column-key">No. Cek / Cheque No.</td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment1}"
+              ></td>
             </tr>
             <tr>
               <td class="pay-box-column-key">Amaun Cek / Cheque Amount (RM)</td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment5}"
+              ></td>
             </tr>
             <tr>
               <td class="pay-box-column-key">
                 Amaun Bayaran / Payment Amount (RM)
               </td>
-              <td class="pay-box-column-value">Hello</td>
+              <td
+                class="pay-box-column-value"
+                th:text="${keyValues.payment4}"
+              ></td>
             </tr>
           </table>
         </div>
