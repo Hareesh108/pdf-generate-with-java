@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PDF Template</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px; /* Adjust height based on your header's height */
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      /* Add other styles as needed */
+
+      /* Page break styles */
+      .page-break {
+        page-break-before: always;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Header content here -->
+      <div class="logo-left">
+        <img src="bank-islam-logo.png" alt="Bank Islam" width="200px" />
+      </div>
+      <div class="logo-right">
+        <img
+          src="logo-perbankan-islam.png"
+          alt="Perbankan Islam"
+          width="50px"
+        />
+      </div>
+      <div class="address">
+        <!-- Address content here -->
+      </div>
+      <div class="name">
+        <!-- Name content here -->
+      </div>
+    </header>
+
+    <!-- Content sections -->
+    <section class="page-break">
+      <!-- Section 1 content -->
+    </section>
+
+    <section class="page-break">
+      <!-- Section 2 content -->
+    </section>
+
+    <!-- More sections as needed -->
+  </body>
+</html>
