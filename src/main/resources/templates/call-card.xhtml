@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PDF Template</title>
+    <style>
+      @page {
+        size: A4;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+
+      @font-face {
+        font-family: EmbArial;
+        src: url("Arial.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: EmbArialBold;
+        src: url("ArialBold.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: EmbArialItalic;
+        src: url("ArialItalic.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: EmbArialItalicBold;
+        src: url("ArialItalicBold.ttf") format("truetype");
+      }
+
+      body {
+        font-family: EmbArial;
+        font-size: 12pt;
+        line-height: 1.2;
+        margin: 0;
+      }
+
+      .header,
+      .footer {
+        width: 100%;
+        position: fixed;
+      }
+
+      .header {
+        top: 0;
+        height: 55px;
+        background-color: rgb(253, 228, 244);
+      }
+
+      .header-left {
+        float: left;
+      }
+      .header-right {
+        float: right;
+        font-family: EmbArialBold;
+        height: 36px;
+        width: 130px;
+        font-size: 10px;
+        border: 1px dashed;
+        text-align: start;
+        padding-left: 13px;
+        padding-top: 13px;
+        vertical-align: middle;
+      }
+
+      .footer {
+        bottom: 0;
+        height: 60px;
+        background-color: red;
+      }
+
+      .content {
+        background-color: rgb(255, 0, 132);
+        margin-top: 160px;
+        margin-bottom: 60px; /* Adjust the margin to be the height of the footer + some spacing */
+      }
+
+      .page-number:before {
+        content: "Page " counter(page);
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #000;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Left side -->
+      <div class="header-left">
+        <img src="bank-islam-logo.png" alt="Bank Islam" height="50px" />
+      </div>
+      <!-- Right side -->
+      <div class="header-right">
+        SEJERA! <br />
+        URGENT!
+      </div>
+    </div>
+
+    <div class="footer">
+      <hr />
+      <p class="page-number"></p>
+    </div>
+
+    <div class="content">
+      <h2>Dummy Content Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <p>
+        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam
+        varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus
+        magna felis sollicitudin mauris. Integer in mauris eu nibh euismod
+        gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis
+        risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue,
+        eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas
+        fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a
+        mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque.
+        Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien,
+        sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam
+        arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet
+        et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu,
+        feugiat in, orci. In hac habitasse platea dictumst.
+      </p>
+      <p>
+        Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit
+        mauris, sed placerat ipsum ligula et est. Maecenas eget eros magna.
+        Quisque at erat eu libero consequat tempus. Quisque molesti turpis
+        felis, quis venenatis mauris consequat vitae. Pellentesque faucibus sem
+        sit amet nulla sollicitudin sit amet.
+      </p>
+    </div>
+  </body>
+</html>

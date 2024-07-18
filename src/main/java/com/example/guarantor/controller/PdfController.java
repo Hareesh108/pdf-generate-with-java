@@ -43,7 +43,7 @@ public class PdfController {
 		Map<String, Object> model = new HashMap<>();
 		model.put("keyValues", keyValues);
 
-		String renderedHtml = thymeleafService.renderTemplate("reminder-cl03.xhtml", model);
+		String renderedHtml = thymeleafService.renderTemplate("call-card.xhtml", model);
 
 		PdfRendererBuilder pdfRendererBuilder = new PdfRendererBuilder();
 		pdfRendererBuilder.withHtmlContent(renderedHtml, "classpath:/static/");
